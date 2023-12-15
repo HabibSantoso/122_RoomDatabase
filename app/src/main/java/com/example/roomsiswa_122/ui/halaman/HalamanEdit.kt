@@ -28,7 +28,7 @@ object ItemEditDestination: DestinasiNavigasi {
 fun ItemEditScreen(
     navigateBack: () -> Unit,
     onNavigateUp: () -> Unit,
-    modifier: Modifier,
+    modifier: Modifier = Modifier,
     viewModel: EditViewModel = viewModel(factory = PenyediaViewModel.Factory)
 ) {
     val coroutineScope = rememberCoroutineScope()
